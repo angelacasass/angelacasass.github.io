@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARAKNOS - MAX ZURU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #221100, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    p, span {
+      font-family: Arial, sans-serif;
+    }
+    
+    .character-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #442200, #ff4400, #442200);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .character-header h1 {
+      font-size: 4em;
+      color: #ff6600;
+      text-shadow: 0 0 20px #ff6600;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-subtitle {
+      font-size: 1.5em;
+      color: #ffaa66;
+      margin-bottom: 2em;
+    }
+    
+    .character-image {
+      width: 300px;
+      height: 300px;
+      background: #111;
+      border-radius: 20px;
+      border: 3px solid #ff6600;
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .character-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    
+    .character-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+    
+    .detail-section {
+      background: linear-gradient(135deg, #221100, #442200);
+      border-left: 4px solid #ff6600;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 15px;
+    }
+    
+    .detail-section h2 {
+      color: #ff6600;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    
+    .detail-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 1em;
+    }
+    
+    .abilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+    
+    .ability-card {
+      background: #0a0a0a;
+      border: 2px solid #ff660033;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .ability-card h3 {
+      color: #ff6600;
+      margin-bottom: 0.5em;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 2em;
+      left: 2em;
+      padding: 0.8em 1.5em;
+      background: #ff6600;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-button:hover {
+      background: #cc4400;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .character-header h1 {
+        font-size: 2.5em;
+      }
+      .character-details {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver</a>
+  
+  <div class="character-header">
+    <h1>ARAKNOS</h1>
+    <p class="character-subtitle">Araña Biomecánica Centinela</p>
+    <div class="character-image">
+      <img src="images/araknos.png" alt="Araknos" class="character-img">
+    </div>
+  </div>
+  
+  <div class="character-details">
+    <div class="detail-section">
+      <h2>Descripción</h2>
+      <p>ARAKNOS es la centinela silenciosa de la colmena ZURU, una araña biomecánica con ojos naranjas hipnóticos que pueden detectar amenazas invisibles. Su diseño combina colores rojos vibrantes con detalles verdes, creando una presencia intimidante pero protectora.</p>
+      <p>Vigilaba desde las sombras con su visión espectral y caparazón camaleónico, detectando señales que otros no podían percibir. Su capacidad para permanecer inmóvil durante horas la convierte en la guardiana perfecta de los secretos más profundos de la colmena.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Habilidades Especiales</h2>
+      <div class="abilities">
+        <div class="ability-card">
+          <h3>Visión Espectral</h3>
+          <p>Sus ojos naranjas pueden detectar amenazas en múltiples espectros de luz.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Caparazón Camaleónico</h3>
+          <p>Puede cambiar de colores para camuflarse perfectamente con su entorno.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Telaraña Digital</h3>
+          <p>Crea redes de sensores invisibles para detectar intrusos a distancia.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Sigilo Absoluto</h3>
+          <p>Se mueve sin hacer ruido, permaneciendo invisible hasta el momento del ataque.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Rol en la Colmena</h2>
+      <p>ARAKNOS es la guardiana de los secretos más profundos de la colmena ZURU. Su papel como centinela trasciende la simple vigilancia: es la protectora de la información clasificada y la detectora de amenazas que otros no pueden ver.</p>
+      <p>Su red de sensores digitales se extiende por toda la colmena, creando un sistema de seguridad impenetrable. Cada movimiento sospechoso, cada señal extraña, cada anomalía energética es inmediatamente detectada por su vigilancia constante.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Historia Personal</h2>
+      <p>Cuando la colmena original fue atacada, ARAKNOS fue quien detectó la amenaza primero, pero su advertencia llegó demasiado tarde. Durante la destrucción, quedó atrapada en una telaraña de datos fragmentados, absorbiendo toda la información de seguridad de la colmena perdida.</p>
+      <p>En su exilio, desarrolló una paranoia protectora que la llevó a perfeccionar sus habilidades de detección. Creó una red de vigilancia tan avanzada que podía monitorear múltiples dimensiones simultáneamente, asegurándose de que nunca más serían tomados por sorpresa.</p>
+      <p>En la nueva colmena, ARAKNOS ha establecido un protocolo de seguridad multicapa que convierte a la colmena ZURU en una fortaleza impenetrable. Su presencia silenciosa pero constante da tranquilidad a todos los habitantes, sabiendo que sus secretos están protegidos por la centinela más vigilante de la galaxia.</p>
+    </div>
+  </div>
+</body>
+</html>

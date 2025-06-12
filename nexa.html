@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXA - MAX ZURU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #221100, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    p, span {
+      font-family: Arial, sans-serif;
+    }
+    
+    .character-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #004422, #00aa55, #004422);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .character-header h1 {
+      font-size: 4em;
+      color: #00ff88;
+      text-shadow: 0 0 20px #00ff88;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-subtitle {
+      font-size: 1.5em;
+      color: #66ffaa;
+      margin-bottom: 2em;
+    }
+    
+    .character-image {
+      width: 300px;
+      height: 300px;
+      background: #111;
+      border-radius: 20px;
+      border: 3px solid #ff6600;
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .character-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    
+    .character-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+    
+    .detail-section {
+      background: linear-gradient(135deg, #001122, #002244);
+      border-left: 4px solid #00ff88;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 15px;
+    }
+    
+    .detail-section h2 {
+      color: #00ff88;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    
+    .detail-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 1em;
+    }
+    
+    .abilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+    
+    .ability-card {
+      background: #0a0a0a;
+      border: 2px solid #00ff8833;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .ability-card h3 {
+      color: #00ff88;
+      margin-bottom: 0.5em;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 2em;
+      left: 2em;
+      padding: 0.8em 1.5em;
+      background: #00ff88;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-button:hover {
+      background: #00cc66;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .character-header h1 {
+        font-size: 2.5em;
+      }
+      .character-details {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver</a>
+  
+  <div class="character-header">
+    <h1>NEXA</h1>
+    <p class="character-subtitle">Mariposa Biomecánica</p>
+    <div class="character-image">
+      <img src="images/nexa.png" alt="Nexa" class="character-img">
+    </div>
+  </div>
+  
+  <div class="character-details">
+    <div class="detail-section">
+      <h2>Descripción</h2>
+      <p>NEXA es una mariposa biónica que vuela con elegancia entre los pliegues del espacio-tiempo. Sus alas iónicas de colores vibrantes azules, verdes y rojos le permiten navegar por dimensiones paralelas y manipular la energía cuántica.</p>
+      <p>Su diseño biomecánico combina la delicadeza natural de una mariposa con la tecnología más avanzada de la colmena ZURU. Es capaz de transformar materia a nivel molecular y crear estructuras arquitectónicas complejas con solo un pensamiento.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Habilidades Especiales</h2>
+      <div class="abilities">
+        <div class="ability-card">
+          <h3>Vuelo Dimensional</h3>
+          <p>Sus alas iónicas le permiten atravesar dimensiones paralelas y pliegues espaciales.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Manipulación Cuántica</h3>
+          <p>Puede alterar la estructura molecular de la materia a nivel cuántico.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Arquitectura Viviente</h3>
+          <p>Diseña y construye estructuras biomecánicas complejas en tiempo real.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Teletransportación</h3>
+          <p>Puede transportarse instantáneamente a través de portales dimensionales.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Rol en la Colmena</h2>
+      <p>NEXA es la arquitecta y diseñadora principal de la colmena ZURU. Su capacidad para manipular la materia a nivel cuántico la convierte en la creadora de las estructuras más complejas y hermosas de su civilización.</p>
+      <p>Durante la reconstrucción, su papel fue fundamental para rediseñar la nueva colmena. Su visión artística combinada con su dominio tecnológico permitió crear una estructura adaptable y evolutiva, capaz de transformarse según las necesidades de sus habitantes.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Historia Personal</h2>
+      <p>Cuando la colmena original colapsó, NEXA quedó atrapada en un pliegue dimensional, flotando entre realidades fragmentadas. Sus alas iónicas absorbieron la energía residual de la destrucción, transformándola en poder cuántico puro.</p>
+      <p>Fue ella quien diseñó los planos de la Nueva Colmena ZURU, una estructura viva que trasciende las limitaciones físicas tradicionales. Su capacidad para ver más allá de las tres dimensiones permitió crear un hogar que puede existir en múltiples realidades simultáneamente.</p>
+    </div>
+  </div>
+</body>
+</html>

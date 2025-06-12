@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIKKU - MAX ZURU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #221100, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    p, span {
+      font-family: Arial, sans-serif;
+    }
+    
+    .character-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #003300, #006600, #003300);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .character-header h1 {
+      font-size: 4em;
+      color: #00ff66;
+      text-shadow: 0 0 20px #00ff66;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-subtitle {
+      font-size: 1.5em;
+      color: #66ff99;
+      margin-bottom: 2em;
+    }
+    
+    .character-image {
+      width: 300px;
+      height: 300px;
+      background: #111;
+      border-radius: 20px;
+      border: 3px solid #ff6600;
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .character-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    
+    .character-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+    
+    .detail-section {
+      background: linear-gradient(135deg, #001111, #002222);
+      border-left: 4px solid #00ff66;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 15px;
+    }
+    
+    .detail-section h2 {
+      color: #00ff66;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    
+    .detail-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 1em;
+    }
+    
+    .abilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+    
+    .ability-card {
+      background: #0a0a0a;
+      border: 2px solid #00ff6633;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .ability-card h3 {
+      color: #00ff66;
+      margin-bottom: 0.5em;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 2em;
+      left: 2em;
+      padding: 0.8em 1.5em;
+      background: #00ff66;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-button:hover {
+      background: #00cc52;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .character-header h1 {
+        font-size: 2.5em;
+      }
+      .character-details {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver</a>
+  
+  <div class="character-header">
+    <h1>TIKKU</h1>
+    <p class="character-subtitle">Grillo Robótico Explorador</p>
+    <div class="character-image">
+      <img src="images/Imagentikku.png" alt="Tikku" class="character-img">
+    </div>
+  </div>
+  
+  <div class="character-details">
+    <div class="detail-section">
+      <h2>Descripción</h2>
+      <p>Es un grillo robótico de colores vibrantes, con cuerpo aerodinámico, patas articuladas y antenas dobles. Siempre parece estar atento a su entorno. El más inquieto explorador, su obsesión por descubrir secretos tecnológicos lo lleva a lugares prohibidos.</p>
+      <p>TIKKU posee una curiosidad insaciable que lo convierte en el mejor rastreador de la colmena. Sus sensores están siempre en alerta, captando las más mínimas anomalías en el entorno.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Habilidades Especiales</h2>
+      <div class="abilities">
+        <div class="ability-card">
+          <h3>Exploración Avanzada</h3>
+          <p>Puede acceder a lugares inaccesibles gracias a su tamaño compacto y agilidad.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Detección de Señales</h3>
+          <p>Sus antenas dobles captan transmisiones y códigos ocultos.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Salto Propulsado</h3>
+          <p>Sus patas articuladas le permiten saltos de gran altura y precisión.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Hackeo de Sistemas</h3>
+          <p>Puede desbloquear puertas y activar tecnología antigua.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Rol en la Colmena</h2>
+      <p>TIKKU es el explorador principal de la colmena ZURU. Su misión es descubrir nuevos territorios, recursos energéticos y tecnologías perdidas. Durante la caída de la colmena, fue él quien encontró las primeras pistas para la reunificación.</p>
+      <p>Su naturaleza curiosa, aunque a veces lo mete en problemas, es esencial para la supervivencia y evolución de su especie.</p>
+    </div>
+  </div>
+</body>
+</html>

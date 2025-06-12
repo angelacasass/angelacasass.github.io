@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REINA ZÁZARA - MAX ZURU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #221100, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    p, span {
+      font-family: Arial, sans-serif;
+    }
+    
+    .character-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #440033, #aa0066, #440033);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .character-header h1 {
+      font-size: 4em;
+      color: #ff0088;
+      text-shadow: 0 0 20px #ff0088;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-subtitle {
+      font-size: 1.5em;
+      color: #ffaadd;
+      margin-bottom: 2em;
+    }
+    
+    .character-image {
+      width: 300px;
+      height: 300px;
+      background: #111;
+      border-radius: 20px;
+      border: 3px solid #ff6600;
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .character-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    
+    .character-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+    
+    .detail-section {
+      background: linear-gradient(135deg, #220011, #440022);
+      border-left: 4px solid #ff0088;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 15px;
+    }
+    
+    .detail-section h2 {
+      color: #ff0088;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    
+    .detail-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 1em;
+    }
+    
+    .abilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+    
+    .ability-card {
+      background: #0a0a0a;
+      border: 2px solid #ff008833;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .ability-card h3 {
+      color: #ff0088;
+      margin-bottom: 0.5em;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 2em;
+      left: 2em;
+      padding: 0.8em 1.5em;
+      background: #ff0088;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-button:hover {
+      background: #cc0066;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .character-header h1 {
+        font-size: 2.5em;
+      }
+      .character-details {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver</a>
+  
+  <div class="character-header">
+    <h1>REINA ZÁZARA</h1>
+    <p class="character-subtitle">Líder de la Colmena</p>
+    <div class="character-image">
+      <img src="images/reina zazara.png" alt="Reina Zazara" class="character-img">
+    </div>
+  </div>
+  
+  <div class="character-details">
+    <div class="detail-section">
+      <h2>Descripción</h2>
+      <p>La Reina Zázara es la líder suprema de la colmena ZURU, una figura majestuosa con ojos luminosos naranjas que pueden ver a través del tiempo y el espacio. Su diseño biomecánico combina elegancia real con poder tecnológico absoluto.</p>
+      <p>Con sus antenas de comunicación cuántica y su cuerpo multifacético en tonos azules y grises, coordina las operaciones de toda la colmena desde su trono central. Su presencia inspira respeto y lealtad entre todos los ZURU.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Habilidades Especiales</h2>
+      <div class="abilities">
+        <div class="ability-card">
+          <h3>Visión Temporal</h3>
+          <p>Sus ojos naranjas pueden percibir eventos pasados y futuros en la línea temporal.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Comunicación Cuántica</h3>
+          <p>Se conecta instantáneamente con cualquier ZURU sin importar la distancia.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Coordinación Suprema</h3>
+          <p>Puede dirigir múltiples operaciones simultáneas con precisión perfecta.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Regeneración Colmena</h3>
+          <p>Tiene el poder de restaurar la conexión mental perdida entre los ZURU.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Rol en la Colmena</h2>
+      <p>Como líder absoluta de la colmena ZURU, la Reina Zázara es el núcleo central de la conciencia colectiva. Todos los hilos de comunicación, coordinación y toma de decisiones pasan por su mente superior.</p>
+      <p>Su papel trasciende el liderazgo tradicional: es la guardiana de la memoria colectiva, la estratega suprema y la fuente de sabiduría ancestral que guía a su pueblo a través de las crisis más difíciles.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Historia Personal</h2>
+      <p>Cuando la colmena original fue destruida, la Reina Zázara fue la última en evacuar, asegurándose de que cada fragmento de memoria colectiva fuera preservado en cristales de emergencia. Su sacrificio permitió que la esencia de la civilización ZURU sobreviviera.</p>
+      <p>Durante el exilio, quedó atrapada en un mundo sin néctar energético, debilitándose día a día. Sin embargo, su voluntad inquebrantable mantuvo viva la esperanza de reunificación. Fue su llamada cuántica la que finalmente guió a los otros ZURU dispersos de vuelta a casa.</p>
+      <p>En la nueva colmena, ha evolucionado su liderazgo hacia un modelo más adaptable y resiliente, preparando a su pueblo para enfrentar cualquier amenaza futura que pueda surgir en la galaxia.</p>
+    </div>
+  </div>
+</body>
+</html>
