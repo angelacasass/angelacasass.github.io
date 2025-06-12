@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Historia de MAX ZURU - Colmena del Futuro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000012;
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    
+    .story-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #000015, #1a0033, #000015);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .story-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="300" r="2" fill="%23ffffff" opacity="0.8"/><circle cx="800" cy="200" r="1" fill="%23ffffff" opacity="0.6"/><circle cx="400" cy="700" r="1.5" fill="%23ffffff" opacity="0.7"/><circle cx="600" cy="500" r="1" fill="%23ffffff" opacity="0.9"/></svg>') repeat;
+      animation: starfield 50s linear infinite;
+    }
+    
+    @keyframes starfield {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-1000px); }
+    }
+    
+    .story-header h1 {
+      font-size: 4em;
+      color: #00f0ff;
+      text-shadow: 0 0 20px #00f0ff;
+      margin-bottom: 0.5em;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .story-header .tagline {
+      font-size: 1.5em;
+      color: #ccc;
+      font-style: italic;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .chapter {
+      padding: 4em 2em;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .chapter-title {
+      font-size: 2.5em;
+      color: #00f0ff;
+      text-align: center;
+      margin-bottom: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .chapter-content {
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 2em;
+    }
+    
+    .chapter-content p {
+      margin-bottom: 1.5em;
+    }
+    
+    .universe-rules {
+      background: linear-gradient(135deg, #001122, #002244);
+      border-left: 4px solid #00f0ff;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 10px;
+    }
+    
+    .universe-rules h3 {
+      color: #00f0ff;
+      margin-bottom: 1em;
+      font-size: 1.3em;
+    }
+    
+    .universe-rules ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .universe-rules li {
+      margin-bottom: 0.8em;
+      padding-left: 1.5em;
+      position: relative;
+    }
+    
+    .universe-rules li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #00f0ff;
+      font-weight: bold;
+    }
+    
+    .character-spotlight {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      margin: 3em 0;
+    }
+    
+    .character-card {
+      background: linear-gradient(135deg, #111, #222);
+      border: 2px solid #00f0ff33;
+      border-radius: 15px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .character-card h4 {
+      color: #00f0ff;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-card p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    
+    .intro-section {
+      background: linear-gradient(135deg, #001133, #002255);
+      color: #fff;
+    }
+    
+    .conflict-section {
+      background: linear-gradient(135deg, #330011, #550022);
+      color: #fff;
+    }
+    
+    .action-section {
+      background: linear-gradient(135deg, #113300, #225500);
+      color: #fff;
+    }
+    
+    .resolution-section {
+      background: linear-gradient(135deg, #331100, #552200);
+      color: #fff;
+    }
+    
+    .nav-buttons {
+      position: fixed;
+      bottom: 2em;
+      right: 2em;
+      z-index: 1000;
+    }
+    
+    .nav-btn {
+      display: block;
+      padding: 0.8em 1.5em;
+      background: #00f0ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-btn:hover {
+      background: #00c8d6;
+      transform: translateX(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .story-header h1 {
+        font-size: 2.5em;
+      }
+      
+      .story-header .tagline {
+        font-size: 1.2em;
+      }
+      
+      .chapter {
+        padding: 2em 1em;
+      }
+      
+      .chapter-title {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="story-header">
+    <h1>MAX ZURU</h1>
+    <p class="tagline">"Cuando la galaxia colapsa, solo los más pequeños pueden reconstruirla"</p>
+  </header>
+
+  <section class="chapter intro-section">
+    <h2 class="chapter-title">El Universo ZURU</h2>
+    <div class="chapter-content">
+      <div class="universe-rules">
+        <h3>Características del Universo</h3>
+        <ul>
+          <li>El universo está compuesto por sistemas planetarios dispersos, muchos colapsados tras una antigua guerra energética</li>
+          <li>Existen zonas prohibidas y planetas hostiles plagados de residuos tecnológicos, radiación o criaturas alteradas</li>
+          <li>La Colmena Galáctica ZURU era una macroestructura biomecánica autónoma, fuente de vida y energía simbiótica</li>
+          <li>La Colmena tenía una mente compartida que conectaba a través de un campo neurocuántico</li>
+          <li>Los bloques de energía cristalina alimentan tanto a los ZURU como a la colmena misma</li>
+        </ul>
+      </div>
+      
+      <div class="universe-rules">
+        <h3>Reglas del Universo</h3>
+        <ul>
+          <li>La energía de los ZURU se agota si se desconectan por mucho tiempo del núcleo colmena</li>
+          <li>Los ZURU pueden ensamblarse temporalmente para formar "Modos Colmena" con funciones especiales</li>
+          <li>La mente colmena solo se restaura al recuperar fragmentos de memoria escondidos en diferentes mundos</li>
+          <li>Existen entidades corruptas que buscan absorber los bloques cristalinos para crear una colmena oscura</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter intro-section">
+    <h2 class="chapter-title">Introducción</h2>
+    <div class="chapter-content">
+      <p>Hubo un tiempo en que la Colmena ZURU brillaba en los cielos como una joya viva, una superestructura suspendida en el vacío del espacio profundo. Allí vivían los ZURU: insectos biomecánicos, criaturas mitad máquina, mitad leyenda ancestral. Unidos por una conciencia colectiva, mantenían la armonía de su mundo gracias a su perfecta organización.</p>
+      
+      <p>Cada uno tenía una función: Exploradores, defensores, constructores, vigías… Y entre ellos, siete ZURU sobresalían como piezas clave del equilibrio galáctico.</p>
+      
+      <div class="character-spotlight">
+        <div class="character-card">
+          <h4>TIKKU</h4>
+          <p>El grillo robótico más inquieto. De colores vibrantes y curiosidad infinita, su obsesión por descubrir secretos tecnológicos lo llevaba a explorar lugares prohibidos.</p>
+        </div>
+        <div class="character-card">
+          <h4>ZIGZOR</h4>
+          <p>Un escarabajo robusto de caparazón metálico, era el guardián incansable. Su antena luminosa captaba señales térmicas a distancias imposibles.</p>
+        </div>
+        <div class="character-card">
+          <h4>ZUMBIX</h4>
+          <p>Veloz como un rayo, surcaba los cielos como un cazador azul, recolectando energía térmica con cada vuelo supersónico.</p>
+        </div>
+        <div class="character-card">
+          <h4>REINA ZÁZARA</h4>
+          <p>Líder de las Colonias Orbitales de Néctar, no solo gobernaba, sino que evolucionaba su colmena digital en tiempo real.</p>
+        </div>
+        <div class="character-card">
+          <h4>NEXA</h4>
+          <p>Mariposa biónica, volaba con elegancia entre los pliegues del espacio-tiempo, con alas iónicas y brazos capaces de construir tecnología alienígena.</p>
+        </div>
+        <div class="character-card">
+          <h4>ARAKNOS</h4>
+          <p>La centinela silenciosa, vigilaba desde las sombras. Con visión espectral y caparazón camaleónico, detectaba señales invisibles.</p>
+        </div>
+      </div>
+      
+      <p>Y así vivían, conectados, floreciendo… hasta que la tormenta llegó.</p>
+    </div>
+  </section>
+
+  <section class="chapter conflict-section">
+    <h2 class="chapter-title">El Conflicto</h2>
+    <div class="chapter-content">
+      <p>Una tormenta de asteroides atravesó su sistema estelar. No fue natural. Algo la dirigía. En cuestión de minutos, la Colmena ZURU fue destrozada. Fragmentos de estructura y alma quedaron esparcidos por la galaxia. La conexión mental se desintegró.</p>
+      
+      <p><strong>TIKKU</strong> cayó en un planeta-máquina, rodeado de ruinas tecnológicas. <strong>ZIGZOR</strong> despertó en un desierto volcánico, su sensor recibiendo señales de calor artificial. <strong>ZUMBIX</strong> quedó atrapado en una atmósfera turbulenta, volando a ciegas.</p>
+      
+      <p><strong>REINA ZÁZARA</strong> perdió contacto con su enjambre y quedó atrapada en un mundo sin néctar. <strong>NEXA</strong> flotaba sobre una jungla radiactiva, sus alas al límite. <strong>ARAKNOS</strong> se ocultó en cavernas invisibles para sobrevivir.</p>
+      
+      <p>La misión ahora era una sola: reunirse antes de que sus memorias colapsaran. Pero no estaban solos. Una entidad desconocida comenzaba a recolectar fragmentos de colmena y cristales de energía… no para restaurarla, sino para corromperla.</p>
+    </div>
+  </section>
+
+  <section class="chapter action-section">
+    <h2 class="chapter-title">La Acción</h2>
+    <div class="chapter-content">
+      <p><strong>TIKKU</strong> fue el primero en encontrar una pista: un pulso intermitente proveniente de un antiguo transmisor de la colmena. Lo siguió. Saltó entre ruinas, activó puertas, desenterró códigos olvidados. Su curiosidad, esta vez, salvaría a muchos.</p>
+      
+      <p><strong>ZIGZOR</strong> detectó su señal y la amplificó. Avanzó con fuerza bruta, derribando obstáculos. Cuando se encontraron, ensamblaron por primera vez. Una luz azul los recorrió. Había esperanza.</p>
+      
+      <p><strong>ZUMBIX</strong> descendió desde los cielos, atraído por la energía térmica acumulada. Su llegada fue fugaz, como un relámpago. Ya eran tres. La mente colmena comenzaba a recordar.</p>
+      
+      <p>Mientras tanto, <strong>Reina Zázara</strong>, aislada y debilitada, reunió a sus microdrones restantes. Su voluntad era más fuerte que su cuerpo. Logró enviar un mensaje codificado a los sobrevivientes: "La colmena vive en ustedes. Encuéntrenme."</p>
+      
+      <p><strong>NEXA</strong> respondió primero. Voló a través de tormentas eléctricas, salvó a TIKKU de una trampa magnética, y juntos liberaron a Zázara de su prisión energética. <strong>ARAKNOS</strong>, silenciosa como siempre, ya los estaba esperando. Observaba desde lejos, neutralizando amenazas antes de que los demás las notaran.</p>
+    </div>
+  </section>
+
+  <section class="chapter resolution-section">
+    <h2 class="chapter-title">La Resolución</h2>
+    <div class="chapter-content">
+      <p>Los siete se reunieron en el centro de una luna muerta. Bajo su superficie, encontraron lo impensable: el Núcleo Madre aún latía. Rodeado de cristales fracturados, el corazón de la Colmena aguardaba a ser restaurado. Pero esta vez, no podían simplemente reconstruir el pasado.</p>
+      
+      <p>Entonces ocurrió lo inesperado: <strong>Reina Zázara</strong> sincronizó su mente con <strong>Nexa</strong>, que rediseñó la arquitectura de la colmena. <strong>Zumbix</strong> y <strong>Araknos</strong> liberaron energía acumulada. <strong>Zigzor</strong> estabilizó el entorno. <strong>Tikku</strong> integró nuevos descubrimientos del planeta-máquina. Juntos, evolucionaron la estructura.</p>
+      
+      <p>La Nueva Colmena ZURU nació ese día. No anclada al vacío, sino viva, adaptable, móvil. Capaz de atravesar galaxias, restaurar mundos, y compartir la sabiduría de una especie que no se rindió.</p>
+      
+      <p>Ahora, donde hay ruinas, ellos construyen. Donde hay silencio, ellos cantan. Donde hubo caos… ellos reconstruyen.</p>
+      
+      <p><strong>Porque la colmena vive. Porque MAX ZURU ha despertado.</strong></p>
+    </div>
+  </section>
+
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">← Personajes</a>
+  </div>
+
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Parallax effect for sections
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector('.story-header');
+      const speed = scrolled * 0.5;
+      parallax.style.transform = `translateY(${speed}px)`;
+    });
+  </script>
+</body>
+</html>

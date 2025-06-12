@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIGZOR - MAX ZURU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #221100, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    p, span {
+      font-family: Arial, sans-serif;
+    }
+    
+    .character-header {
+      height: 100vh;
+      background: linear-gradient(45deg, #003366, #0066cc, #003366);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .character-header h1 {
+      font-size: 4em;
+      color: #00aaff;
+      text-shadow: 0 0 20px #00aaff;
+      margin-bottom: 0.5em;
+    }
+    
+    .character-subtitle {
+      font-size: 1.5em;
+      color: #66ccff;
+      margin-bottom: 2em;
+    }
+    
+    .character-image {
+      width: 300px;
+      height: 300px;
+      background: #111;
+      border-radius: 20px;
+      border: 3px solid #ff6600;
+      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .character-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+    }
+    
+    .character-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+    
+    .detail-section {
+      background: linear-gradient(135deg, #001122, #002244);
+      border-left: 4px solid #00aaff;
+      padding: 2em;
+      margin: 2em 0;
+      border-radius: 15px;
+    }
+    
+    .detail-section h2 {
+      color: #00aaff;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    
+    .detail-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 1em;
+    }
+    
+    .abilities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin: 2em 0;
+    }
+    
+    .ability-card {
+      background: #0a0a0a;
+      border: 2px solid #00aaff33;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    
+    .ability-card h3 {
+      color: #00aaff;
+      margin-bottom: 0.5em;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 2em;
+      left: 2em;
+      padding: 0.8em 1.5em;
+      background: #00aaff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-button:hover {
+      background: #0088cc;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .character-header h1 {
+        font-size: 2.5em;
+      }
+      .character-details {
+        padding: 2em 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver</a>
+  
+  <div class="character-header">
+    <h1>ZIGZOR</h1>
+    <p class="character-subtitle">Escarabajo Biomecánico Guardián</p>
+    <div class="character-image">
+      <img src="images/Imagen de zigzor.png" alt="Zigzor" class="character-img">
+    </div>
+  </div>
+  
+  <div class="character-details">
+    <div class="detail-section">
+      <h2>Descripción</h2>
+      <p>ZIGZOR es un escarabajo robótico robusto de caparazón metálico azul y verde, diseñado para la defensa y exploración pesada. Su estructura compacta pero poderosa lo convierte en el guardián incansable de la colmena ZURU.</p>
+      <p>Con su antena luminosa de detección térmica, puede captar señales de calor a distancias imposibles, convirtiéndolo en el centinela perfecto para detectar amenazas antes de que se acerquen a su territorio.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Habilidades Especiales</h2>
+      <div class="abilities">
+        <div class="ability-card">
+          <h3>Detección Térmica</h3>
+          <p>Su antena luminosa capta señales de calor artificial a grandes distancias.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Caparazón Blindado</h3>
+          <p>Su estructura metálica lo protege de impactos y radiación extrema.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Fuerza Bruta</h3>
+          <p>Capaz de derribar obstáculos y abrir caminos bloqueados.</p>
+        </div>
+        <div class="ability-card">
+          <h3>Amplificación de Señales</h3>
+          <p>Puede detectar y amplificar transmisiones débiles de otros ZURU.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Rol en la Colmena</h2>
+      <p>ZIGZOR es el guardián principal de la colmena ZURU. Su misión es proteger a los miembros más vulnerables del grupo y asegurar las rutas de exploración. Durante la caída de la colmena, fue fundamental para amplificar las señales de reunión.</p>
+      <p>Su naturaleza protectora y su capacidad para detectar amenazas lo convierten en el escudo viviente de su especie, siempre dispuesto a enfrentar el peligro para proteger a sus compañeros.</p>
+    </div>
+    
+    <div class="detail-section">
+      <h2>Historia Personal</h2>
+      <p>Cuando la tormenta de asteroides destrozó la colmena, ZIGZOR despertó en un desierto volcánico hostil. Su sensor térmico detectó inmediatamente las señales de calor artificial que lo rodeaban, pero también captó algo más importante: las débiles transmisiones de sus compañeros perdidos.</p>
+      <p>Fue él quien amplificó la señal de TIKKU, convirtiéndose en el punto de reunión para los primeros sobrevivientes. Su determinación para proteger y reunir a su familia cibernética fue clave en los primeros días de la reconstrucción.</p>
+    </div>
+  </div>
+</body>
+</html>
